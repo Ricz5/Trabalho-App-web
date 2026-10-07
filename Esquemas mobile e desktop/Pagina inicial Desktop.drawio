@@ -1,0 +1,130 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="ajeQmTnGvzJk_uQ3gRG1">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-33" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=none;html=1;" value="" vertex="1">
+          <mxGeometry height="1280" width="1440" x="1680" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-34" parent="1" style="rounded=0;fillColor=#ffffff;strokeColor=none;html=1;" value="" vertex="1">
+          <mxGeometry height="88" width="1440" x="1680" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-35" parent="1" style="fontColor=#123F63;fontStyle=1;fontSize=25;align=left;verticalAlign=middle;html=1;" value="RentGO" vertex="1">
+          <mxGeometry height="40" width="150" x="1752" y="441" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-36" parent="1" style="fontColor=#123F63;fontSize=14;align=center;verticalAlign=middle;html=1;" value="Início   |   Frota   |   Locais   |   Como funciona   |   Apoio" vertex="1">
+          <mxGeometry height="40" width="600" x="2090" y="441" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-37" parent="1" style="rounded=1;arcSize=20;fillColor=#ffffff;strokeColor=#D9E7ED;fontColor=#123F63;fontStyle=1;fontSize=14;html=1;" value="Entrar" vertex="1">
+          <mxGeometry height="42" width="88" x="2960" y="439" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-38" parent="1" style="rounded=0;fillColor=#EAF6FA;strokeColor=none;html=1;" value="" vertex="1">
+          <mxGeometry height="410" width="1440" x="1680" y="504" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-39" parent="1" style="fontColor=#123F63;fontStyle=1;fontSize=38;align=left;verticalAlign=middle;whiteSpace=wrap;html=1;" value="Aluga o teu carro.&lt;br&gt;Simples e transparente." vertex="1">
+          <mxGeometry height="110" width="540" x="1780" y="566" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-40" parent="1" style="fontColor=#45657A;fontSize=17;align=left;verticalAlign=middle;whiteSpace=wrap;html=1;" value="Escolhe o carro ideal para a tua viagem, sem complicações e com tudo incluído." vertex="1">
+          <mxGeometry height="55" width="420" x="1784" y="696" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-41" parent="1" style="rounded=1;arcSize=18;fillColor=#D5EEF5;strokeColor=#B8DCE7;html=1;" value="" vertex="1">
+          <mxGeometry height="245" width="500" x="2500" y="551" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-42" parent="1" style="rounded=1;arcSize=30;fillColor=#ffffff;strokeColor=#B8DCE7;html=1;" value="" vertex="1">
+          <mxGeometry height="100" width="255" x="2620" y="611" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-43" parent="1" style="rounded=1;arcSize=30;fillColor=#ffffff;strokeColor=#8FC9D8;fontColor=#8FC9D8;fontStyle=1;fontSize=18;html=1;" value="CARRO" vertex="1">
+          <mxGeometry height="72" width="360" x="2570" y="676" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-44" parent="1" style="ellipse;fillColor=#123F63;strokeColor=#123F63;html=1;" value="" vertex="1">
+          <mxGeometry height="48" width="48" x="2630" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-45" parent="1" style="ellipse;fillColor=#123F63;strokeColor=#123F63;html=1;" value="" vertex="1">
+          <mxGeometry height="48" width="48" x="2825" y="726" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-46" parent="1" style="rounded=1;arcSize=18;fillColor=#ffffff;strokeColor=#DCE9EE;shadow=1;html=1;" value="" vertex="1">
+          <mxGeometry height="158" width="1240" x="1780" y="834" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-47" parent="1" style="fontColor=#123F63;fontStyle=1;fontSize=21;align=left;verticalAlign=middle;html=1;" value="Encontrar um carro" vertex="1">
+          <mxGeometry height="34" width="260" x="1815" y="856" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-48" parent="1" style="rounded=1;arcSize=12;fillColor=#ffffff;strokeColor=#D7E6EC;fontColor=#78909C;fontSize=12;align=left;verticalAlign=middle;spacingLeft=16;whiteSpace=wrap;html=1;" value="Local de levantamento&lt;br&gt;&lt;font color=&quot;#123F63&quot;&gt;Lisboa, Portugal&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="270" x="1815" y="906" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-49" parent="1" style="rounded=1;arcSize=12;fillColor=#ffffff;strokeColor=#D7E6EC;fontColor=#78909C;fontSize=12;align=left;verticalAlign=middle;spacingLeft=16;whiteSpace=wrap;html=1;" value="Data de levantamento&lt;br&gt;&lt;font color=&quot;#123F63&quot;&gt;12 Jun 2025&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="270" x="2105" y="906" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-50" parent="1" style="rounded=1;arcSize=12;fillColor=#ffffff;strokeColor=#D7E6EC;fontColor=#78909C;fontSize=12;align=left;verticalAlign=middle;spacingLeft=16;whiteSpace=wrap;html=1;" value="Data de devolução&lt;br&gt;&lt;font color=&quot;#123F63&quot;&gt;16 Jun 2025&lt;/font&gt;" vertex="1">
+          <mxGeometry height="58" width="270" x="2395" y="906" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-51" parent="1" style="rounded=1;arcSize=12;fillColor=#F77B2F;strokeColor=#F77B2F;fontColor=#ffffff;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;html=1;" value="Pesquisar carros" vertex="1">
+          <mxGeometry height="58" width="285" x="2695" y="906" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-52" parent="1" style="fontColor=#123F63;fontStyle=1;fontSize=27;align=left;verticalAlign=middle;html=1;" value="Tudo incluído, sem surpresas" vertex="1">
+          <mxGeometry height="45" width="500" x="1780" y="1046" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-53" parent="1" style="rounded=1;arcSize=14;fillColor=#ffffff;strokeColor=#DCE9EE;shadow=1;fontColor=#123F63;fontSize=16;align=left;verticalAlign=middle;spacingLeft=25;whiteSpace=wrap;html=1;" value="&lt;b&gt;Preço transparente&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#587080&quot;&gt;Sem taxas escondidas no final.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="112" width="380" x="1780" y="1116" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-54" parent="1" style="rounded=1;arcSize=14;fillColor=#ffffff;strokeColor=#DCE9EE;shadow=1;fontColor=#123F63;fontSize=16;align=left;verticalAlign=middle;spacingLeft=25;whiteSpace=wrap;html=1;" value="&lt;b&gt;Seguro incluído&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#587080&quot;&gt;Viaja sempre com tranquilidade.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="112" width="380" x="2210" y="1116" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-55" parent="1" style="rounded=1;arcSize=14;fillColor=#ffffff;strokeColor=#DCE9EE;shadow=1;fontColor=#123F63;fontSize=16;align=left;verticalAlign=middle;spacingLeft=25;whiteSpace=wrap;html=1;" value="&lt;b&gt;Assistência 24/7&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#587080&quot;&gt;Estamos aqui quando precisares.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="112" width="380" x="2640" y="1116" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-56" parent="1" style="fontColor=#123F63;fontStyle=1;fontSize=27;align=left;verticalAlign=middle;html=1;" value="A nossa frota" vertex="1">
+          <mxGeometry height="45" width="400" x="1780" y="1281" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-57" parent="1" style="rounded=1;arcSize=14;fillColor=#ffffff;strokeColor=#DCE9EE;shadow=1;html=1;" value="" vertex="1">
+          <mxGeometry height="270" width="380" x="1780" y="1346" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-58" parent="1" style="rounded=1;arcSize=12;fillColor=#EAF6FA;strokeColor=none;fontColor=#8BB9C7;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;html=1;" value="IMAGEM DO CARRO" vertex="1">
+          <mxGeometry height="115" width="344" x="1798" y="1364" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-59" parent="1" style="fontColor=#123F63;fontSize=16;align=left;verticalAlign=middle;spacingLeft=18;whiteSpace=wrap;html=1;" value="Renault Clio&lt;br&gt;&lt;font color=&quot;#718895&quot; size=&quot;2&quot;&gt;Compacto · Manual&lt;/font&gt;&lt;br&gt;&lt;b&gt;desde 29€ / dia&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="210" x="1798" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-60" parent="1" style="rounded=1;arcSize=10;fillColor=#ffffff;strokeColor=#F77B2F;fontColor=#F77B2F;fontStyle=1;fontSize=13;html=1;" value="Ver carro" vertex="1">
+          <mxGeometry height="42" width="112" x="2030" y="1516" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-61" parent="1" style="rounded=1;arcSize=14;fillColor=#ffffff;strokeColor=#DCE9EE;shadow=1;html=1;" value="" vertex="1">
+          <mxGeometry height="270" width="380" x="2210" y="1346" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-62" parent="1" style="rounded=1;arcSize=12;fillColor=#EAF6FA;strokeColor=none;fontColor=#8BB9C7;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;html=1;" value="IMAGEM DO CARRO" vertex="1">
+          <mxGeometry height="115" width="344" x="2228" y="1364" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-63" parent="1" style="fontColor=#123F63;fontSize=16;align=left;verticalAlign=middle;spacingLeft=18;whiteSpace=wrap;html=1;" value="Peugeot 3008&lt;br&gt;&lt;font color=&quot;#718895&quot; size=&quot;2&quot;&gt;SUV · Automático&lt;/font&gt;&lt;br&gt;&lt;b&gt;desde 49€ / dia&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="210" x="2228" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-64" parent="1" style="rounded=1;arcSize=10;fillColor=#ffffff;strokeColor=#F77B2F;fontColor=#F77B2F;fontStyle=1;fontSize=13;html=1;" value="Ver carro" vertex="1">
+          <mxGeometry height="42" width="112" x="2460" y="1516" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-65" parent="1" style="rounded=1;arcSize=14;fillColor=#ffffff;strokeColor=#DCE9EE;shadow=1;html=1;" value="" vertex="1">
+          <mxGeometry height="270" width="380" x="2640" y="1346" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-66" parent="1" style="rounded=1;arcSize=12;fillColor=#EAF6FA;strokeColor=none;fontColor=#8BB9C7;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;html=1;" value="IMAGEM DO CARRO" vertex="1">
+          <mxGeometry height="115" width="344" x="2658" y="1364" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-67" parent="1" style="fontColor=#123F63;fontSize=16;align=left;verticalAlign=middle;spacingLeft=18;whiteSpace=wrap;html=1;" value="BMW Série 1&lt;br&gt;&lt;font color=&quot;#718895&quot; size=&quot;2&quot;&gt;Premium · Automático&lt;/font&gt;&lt;br&gt;&lt;b&gt;desde 65€ / dia&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="210" x="2658" y="1488" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-68" parent="1" style="rounded=1;arcSize=10;fillColor=#ffffff;strokeColor=#F77B2F;fontColor=#F77B2F;fontStyle=1;fontSize=13;html=1;" value="Ver carro" vertex="1">
+          <mxGeometry height="42" width="112" x="2890" y="1516" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-69" parent="1" style="rounded=1;arcSize=18;fillColor=#123F63;strokeColor=#123F63;html=1;" value="" vertex="1">
+          <mxGeometry height="150" width="1240" x="1780" y="1666" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-70" parent="1" style="fontColor=#000000;fontStyle=1;fontSize=29;align=left;verticalAlign=middle;html=1;" value="Pronto para partir?" vertex="1">
+          <mxGeometry height="45" width="420" x="1830" y="1696" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-71" parent="1" style="fontColor=#000000;fontSize=15;align=left;verticalAlign=middle;html=1;" value="Encontra o carro perfeito para a tua próxima viagem." vertex="1">
+          <mxGeometry height="32" width="460" x="1830" y="1738" as="geometry" />
+        </mxCell>
+        <mxCell id="HZJIakXJKK6S4b47jz4Y-72" parent="1" style="rounded=1;arcSize=12;fillColor=#F77B2F;strokeColor=#F77B2F;fontColor=#ffffff;fontStyle=1;fontSize=15;align=center;verticalAlign=middle;html=1;" value="Pesquisar carros" vertex="1">
+          <mxGeometry height="58" width="210" x="2760" y="1714" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

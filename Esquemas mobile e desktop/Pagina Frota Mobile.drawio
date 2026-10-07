@@ -1,0 +1,127 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="UrIXg-DyksBu3hXcy2Iu">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-1" parent="1" style="rounded=0;fillColor=#EAF6FA;strokeColor=none;html=1;" value="" vertex="1">
+          <mxGeometry height="1600" width="390" x="219" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-2" parent="1" style="rounded=0;fillColor=#FFFFFF;strokeColor=#D7EDF3;strokeWidth=1;html=1;" value="" vertex="1">
+          <mxGeometry height="76" width="390" x="219" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-3" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#123F63;fontSize=25;fontStyle=1;html=1;" value="RentGO" vertex="1">
+          <mxGeometry height="42" width="130" x="239" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-4" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#F77B2F;fontSize=17;html=1;" value="●" vertex="1">
+          <mxGeometry height="24" width="20" x="325" y="58" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-5" parent="1" style="rounded=1;arcSize=30;fillColor=#EAF6FA;strokeColor=#C6E3EC;fontColor=#123F63;fontSize=22;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="☰" vertex="1">
+          <mxGeometry height="44" width="44" x="545" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-6" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#123F63;fontSize=26;fontStyle=1;html=1;" value="A nossa frota" vertex="1">
+          <mxGeometry height="38" width="350" x="239" y="138" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-7" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#56758D;fontSize=14;html=1;" value="Escolhe o carro ideal para a tua viagem." vertex="1">
+          <mxGeometry height="28" width="350" x="239" y="176" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-8" parent="1" style="rounded=1;arcSize=16;fillColor=#FFFFFF;strokeColor=#D1E8F0;shadow=1;html=1;" value="" vertex="1">
+          <mxGeometry height="250" width="350" x="239" y="224" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-9" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#123F63;fontSize=16;fontStyle=1;html=1;" value="Filtra a tua escolha" vertex="1">
+          <mxGeometry height="26" width="300" x="257" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-10" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#56758D;fontSize=11;fontStyle=1;html=1;" value="Localização" vertex="1">
+          <mxGeometry height="20" width="150" x="257" y="271" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-11" parent="1" style="rounded=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#C6E3EC;fontColor=#123F63;fontSize=12;align=left;spacingLeft=12;verticalAlign=middle;html=1;" value="Todas as localizações⌄" vertex="1">
+          <mxGeometry height="39" width="314" x="257" y="291" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-12" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#56758D;fontSize=11;fontStyle=1;html=1;" value="Categoria" vertex="1">
+          <mxGeometry height="20" width="150" x="257" y="336" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-13" parent="1" style="rounded=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#C6E3EC;fontColor=#123F63;fontSize=12;align=left;spacingLeft=12;verticalAlign=middle;html=1;" value="Todas as categorias⌄" vertex="1">
+          <mxGeometry height="39" width="314" x="257" y="356" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-14" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#56758D;fontSize=11;fontStyle=1;html=1;" value="Preço" vertex="1">
+          <mxGeometry height="20" width="150" x="257" y="401" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-15" parent="1" style="rounded=1;arcSize=12;fillColor=#FFFFFF;strokeColor=#C6E3EC;fontColor=#123F63;fontSize=12;align=left;spacingLeft=12;verticalAlign=middle;html=1;" value="Todos os preços⌄" vertex="1">
+          <mxGeometry height="39" width="314" x="257" y="421" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-16" parent="1" style="rounded=1;arcSize=18;fillColor=#F77B2F;strokeColor=#F77B2F;fontColor=#FFFFFF;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="Filtrar" vertex="1">
+          <mxGeometry height="46" width="314" x="257" y="484" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-17" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#123F63;fontSize=21;fontStyle=1;html=1;" value="Carros disponíveis" vertex="1">
+          <mxGeometry height="34" width="350" x="239" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-18" parent="1" style="text;align=right;verticalAlign=middle;fontColor=#6C8798;fontSize=11;html=1;" value="3 carros encontrados" vertex="1">
+          <mxGeometry height="25" width="150" x="439" y="564" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-19" parent="1" style="rounded=1;arcSize=16;fillColor=#FFFFFF;strokeColor=#D1E8F0;shadow=1;html=1;" value="" vertex="1">
+          <mxGeometry height="292" width="350" x="239" y="614" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-20" parent="1" style="rounded=1;arcSize=12;fillColor=#DDF3F8;strokeColor=none;fontColor=#8AB5C5;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="RENAULT&#xa;CLIO" vertex="1">
+          <mxGeometry height="132" width="326" x="251" y="626" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-21" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#123F63;fontSize=18;fontStyle=1;html=1;" value="Renault Clio" vertex="1">
+          <mxGeometry height="28" width="190" x="257" y="772" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-22" parent="1" style="rounded=1;arcSize=12;fillColor=#EAF6FA;strokeColor=none;fontColor=#35718C;fontSize=11;align=center;verticalAlign=middle;html=1;" value="Compacto" vertex="1">
+          <mxGeometry height="24" width="67" x="494" y="774" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-23" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#F77B2F;fontSize=16;fontStyle=1;html=1;" value="desde 29€/dia" vertex="1">
+          <mxGeometry height="25" width="180" x="257" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-24" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#56758D;fontSize=12;spacing=4;html=1;" value="✓  Seguro básico incluído&#xa;✓  Quilómetros ilimitados" vertex="1">
+          <mxGeometry height="45" width="205" x="257" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-25" parent="1" style="rounded=1;arcSize=14;fillColor=#EAF6FA;strokeColor=#C6E3EC;fontColor=#123F63;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="Ver carro" vertex="1">
+          <mxGeometry height="34" width="74" x="487" y="847" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-26" parent="1" style="rounded=1;arcSize=16;fillColor=#FFFFFF;strokeColor=#D1E8F0;shadow=1;html=1;" value="" vertex="1">
+          <mxGeometry height="292" width="350" x="239" y="928" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-27" parent="1" style="rounded=1;arcSize=12;fillColor=#DDF3F8;strokeColor=none;fontColor=#8AB5C5;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="PEUGEOT&#xa;3008" vertex="1">
+          <mxGeometry height="132" width="326" x="251" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-28" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#123F63;fontSize=18;fontStyle=1;html=1;" value="Peugeot 3008" vertex="1">
+          <mxGeometry height="28" width="190" x="257" y="1086" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-29" parent="1" style="rounded=1;arcSize=12;fillColor=#EAF6FA;strokeColor=none;fontColor=#35718C;fontSize=11;align=center;verticalAlign=middle;html=1;" value="SUV" vertex="1">
+          <mxGeometry height="24" width="48" x="513" y="1088" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-30" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#F77B2F;fontSize=16;fontStyle=1;html=1;" value="desde 45€/dia" vertex="1">
+          <mxGeometry height="25" width="180" x="257" y="1124" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-31" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#56758D;fontSize=12;spacing=4;html=1;" value="✓  Seguro básico incluído&#xa;✓  Quilómetros ilimitados" vertex="1">
+          <mxGeometry height="45" width="205" x="257" y="1154" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-32" parent="1" style="rounded=1;arcSize=14;fillColor=#EAF6FA;strokeColor=#C6E3EC;fontColor=#123F63;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="Ver carro" vertex="1">
+          <mxGeometry height="34" width="74" x="487" y="1161" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-33" parent="1" style="rounded=1;arcSize=16;fillColor=#FFFFFF;strokeColor=#D1E8F0;shadow=1;html=1;" value="" vertex="1">
+          <mxGeometry height="292" width="350" x="239" y="1242" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-34" parent="1" style="rounded=1;arcSize=12;fillColor=#DDF3F8;strokeColor=none;fontColor=#8AB5C5;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="FORD&#xa;TOURNEO" vertex="1">
+          <mxGeometry height="132" width="326" x="251" y="1254" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-35" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#123F63;fontSize=18;fontStyle=1;html=1;" value="Ford Tourneo" vertex="1">
+          <mxGeometry height="28" width="190" x="257" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-36" parent="1" style="rounded=1;arcSize=12;fillColor=#EAF6FA;strokeColor=none;fontColor=#35718C;fontSize=11;align=center;verticalAlign=middle;html=1;" value="Carrinha" vertex="1">
+          <mxGeometry height="24" width="66" x="495" y="1402" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-37" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#F77B2F;fontSize=16;fontStyle=1;html=1;" value="desde 55€/dia" vertex="1">
+          <mxGeometry height="25" width="180" x="257" y="1438" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-38" parent="1" style="text;align=left;verticalAlign=middle;fontColor=#56758D;fontSize=12;spacing=4;html=1;" value="✓  Seguro básico incluído&#xa;✓  Quilómetros ilimitados" vertex="1">
+          <mxGeometry height="45" width="205" x="257" y="1468" as="geometry" />
+        </mxCell>
+        <mxCell id="m3tu2rTRdYN22o2Nk4A2-39" parent="1" style="rounded=1;arcSize=14;fillColor=#EAF6FA;strokeColor=#C6E3EC;fontColor=#123F63;fontSize=12;fontStyle=1;align=center;verticalAlign=middle;html=1;" value="Ver carro" vertex="1">
+          <mxGeometry height="34" width="74" x="487" y="1475" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
