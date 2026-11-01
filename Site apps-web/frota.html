@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frota de Carros - RentGo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo-rentgo.png" alt="RentGo">
+            </a>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="frota.html" class="active">Frota</a>
+                <a href="locais.html">Locais</a>
+                <a href="como-funciona.html">Como funciona</a>
+                <a href="apoio.html">Apoio</a>
+            </nav>
+            <a href="entrar.html" class="btn-entrar">Entrar</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <div style="text-align: center; margin-bottom: 30px;">
+            <h1 style="color: var(--primary);">A nossa frota</h1>
+            <p style="color: var(--text-muted);">Escolhe o carro perfeito para a tua viagem.</p>
+        </div>
+
+        <!-- Filtros de Pesquisa -->
+        <div class="search-box" style="margin-bottom: 35px;">
+            <div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: flex-end;">
+                <div class="form-group" style="flex: 1; min-width: 180px; margin-bottom: 0;">
+                    <label>Localização</label>
+                    <select>
+                        <option>Todas as localizações</option>
+                        <option>Lisboa - Aeroporto</option>
+                        <option>Porto - Aeroporto</option>
+                        <option>Coimbra - Estação</option>
+                    </select>
+                </div>
+                <div class="form-group" style="flex: 1; min-width: 180px; margin-bottom: 0;">
+                    <label>Categoria</label>
+                    <select>
+                        <option>Todas as categorias</option>
+                        <option>Citadino</option>
+                        <option>Compacto</option>
+                        <option>SUV</option>
+                    </select>
+                </div>
+                <div class="form-group" style="flex: 1; min-width: 180px; margin-bottom: 0;">
+                    <label>Preço</label>
+                    <select>
+                        <option>Qualquer preço</option>
+                        <option>Até 30€/dia</option>
+                        <option>Até 60€/dia</option>
+                    </select>
+                </div>
+                <button class="btn-primary" style="padding: 12px 28px;">Filtrar</button>
+            </div>
+        </div>
+
+        <!-- Lista de Carros -->
+        <div class="grid-3">
+            <div class="card-carro">
+                <div class="carro-img">🚗</div>
+                <div class="carro-header">
+                    <h3>Renault Clio</h3>
+                    <span class="badge-tag">Citadino</span>
+                </div>
+                <div class="carro-preco">29€ <span>/ dia</span></div>
+                <ul class="vantagens-lista">
+                    <li>Seguro básico incluído</li>
+                    <li>Quilómetros ilimitados</li>
+                </ul>
+                <a href="detalhe.html" class="btn-primary">Ver carro</a>
+            </div>
+
+            <div class="card-carro">
+                <div class="carro-img">🚙</div>
+                <div class="carro-header">
+                    <h3>Peugeot 3008</h3>
+                    <span class="badge-tag">SUV</span>
+                </div>
+                <div class="carro-preco">45€ <span>/ dia</span></div>
+                <ul class="vantagens-lista">
+                    <li>Seguro básico incluído</li>
+                    <li>Quilómetros ilimitados</li>
+                </ul>
+                <a href="detalhe.html" class="btn-primary">Ver carro</a>
+            </div>
+
+            <div class="card-carro">
+                <div class="carro-img">🚘</div>
+                <div class="carro-header">
+                    <h3>BMW Série 1</h3>
+                    <span class="badge-tag">Compacto</span>
+                </div>
+                <div class="carro-preco">50€ <span>/ dia</span></div>
+                <ul class="vantagens-lista">
+                    <li>Seguro básico incluído</li>
+                    <li>Quilómetros ilimitados</li>
+                </ul>
+                <a href="detalhe.html" class="btn-primary">Ver carro</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 RentGo · CBS Coimbra</p>
+    </footer>
+
+</body>
+</html>

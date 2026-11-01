@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhe do Carro - RentGo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo-rentgo.png" alt="RentGo">
+            </a>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="frota.html" class="active">Frota</a>
+                <a href="locais.html">Locais</a>
+                <a href="como-funciona.html">Como funciona</a>
+                <a href="apoio.html">Apoio</a>
+            </nav>
+            <a href="entrar.html" class="btn-entrar">Entrar</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <a href="frota.html" style="text-decoration: none; color: var(--accent); font-weight: 600;">← Voltar à lista</a>
+        
+        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px; margin-top: 20px;">
+            <!-- Informações Técnicas -->
+            <div style="background: #fff; padding: 25px; border-radius: 14px; border: 1px solid var(--border-color);">
+                <div class="carro-img" style="height: 250px;">🚗</div>
+                <h1 style="color: var(--primary); margin-bottom: 5px;">Renault Clio</h1>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Económico, ágil e perfeito para viagens pela cidade ou escapadelas de fim de semana.</p>
+                
+                <h3 style="margin-bottom: 10px;">Especificações</h3>
+                <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 14px; color: #555;">
+                    <li>⛽ Combustível: Gasolina</li>
+                    <li>🕹️ Caixa: Manual (5 vel.)</li>
+                    <li>👥 Lotação: 5 Passageiros</li>
+                    <li>🧳 Bagagem: 2 Malas</li>
+                </ul>
+            </div>
+
+            <!-- Resumo e Confirmação de Reserva -->
+            <div class="search-box">
+                <h3 style="color: var(--primary); margin-bottom: 15px;">Reserva online</h3>
+                <div style="font-size: 28px; font-weight: 800; color: var(--accent); margin-bottom: 15px;">
+                    29€ <span style="font-size: 14px; color: var(--text-muted); font-weight: normal;">/ dia</span>
+                </div>
+                <p style="font-size: 13px; color: #10b981; margin-bottom: 15px;">✓ Sem caução abusiva · Cancelamento grátis</p>
+                <button class="btn-primary" style="width: 100%;" onclick="alert('Reserva iniciada!')">Reservar agora</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

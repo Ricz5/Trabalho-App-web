@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentGo - Aluguer de Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo-rentgo.png" alt="RentGo">
+            </a>
+            <nav>
+                <a href="index.html" class="active">Início</a>
+                <a href="frota.html">Frota</a>
+                <a href="locais.html">Locais</a>
+                <a href="como-funciona.html">Como funciona</a>
+                <a href="apoio.html">Apoio</a>
+            </nav>
+            <a href="entrar.html" class="btn-entrar">Entrar</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div>
+                <h1>Aluga o teu carro.<br>Simples e transparente.</h1>
+                <p>Viaja ao teu ritmo com preços claros e uma frota pronta para partir. Sem taxas escondidas.</p>
+            </div>
+
+            <!-- Caixa de Pesquisa rápida -->
+            <div class="search-box">
+                <h3 style="margin-bottom: 15px; color: var(--primary);">Encontrar um carro</h3>
+                <form action="frota.html">
+                    <div class="form-group">
+                        <label>Local de levantamento</label>
+                        <input type="text" placeholder="Ex: Aeroporto de Lisboa" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Data de levantamento</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Data de devolução</label>
+                        <input type="date" required>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Pesquisar carros</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Vantagens -->
+        <section style="margin-top: 40px;">
+            <h2 style="font-size: 22px; color: var(--primary);">Tudo incluído, sem surpresas</h2>
+            <div class="grid-3">
+                <div class="card-vantagem">
+                    <h3>Preço transparente</h3>
+                    <p>O valor que vês é o valor final. Sem taxas adicionais ao balcão.</p>
+                </div>
+                <div class="card-vantagem">
+                    <h3>Seguro incluído</h3>
+                    <p>Seguro básico e proteção contra danos já incluídos em todas as reservas.</p>
+                </div>
+                <div class="card-vantagem">
+                    <h3>Quilómetros Ilimitados</h3>
+                    <p>Conduz o quanto precisares sem qualquer cobrança por quilómetro extra.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="cta-banner">
+            <h2>Pronto para partir?</h2>
+            <p>Encontra o carro ideal para a tua próxima viagem.</p>
+            <a href="frota.html" class="btn-primary">Ver todos os carros</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 RentGo · Aplicações Web · CBS Coimbra</p>
+    </footer>
+
+</body>
+</html>

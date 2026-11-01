@@ -1,0 +1,334 @@
+/* ==========================================================
+   CONFIGURAÇÕES GERAIS E FONTES
+   ========================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+:root {
+    --primary: #06224a;       /* Azul-marinho do "Rent" */
+    --accent: #055cd4;        /* Azul vivo do "Go" */
+    --accent-hover: #044aaa;  /* Azul mais escuro para o hover */
+    --bg-body: #f8fafc;
+    --card-bg: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+/* ==========================================================
+   BARRA DE NAVEGAÇÃO (HEADER)
+   ========================================================== */
+header {
+    background: #ffffff;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover, nav a.active {
+    color: var(--accent);
+}
+
+.btn-entrar {
+    padding: 8px 18px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--text-main);
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-entrar:hover {
+    border-color: var(--primary);
+    background: var(--primary);
+    color: #fff;
+}
+
+/* ==========================================================
+   ELEMENTOS PADRÃO (BOTÕES E CONTENTORES)
+   ========================================================== */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: var(--accent);
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--accent);
+    border: 1.5px solid var(--accent);
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-outline:hover {
+    background: var(--accent);
+    color: #fff;
+}
+
+/* ==========================================================
+   PÁGINA INICIAL: HERO & CAIXA DE PESQUISA
+   ========================================================== */
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.hero h1 {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.hero p {
+    color: var(--text-muted);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Caixa de pesquisa rápida */
+.search-box {
+    background: #ffffff;
+    padding: 26px;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+    border: 1px solid var(--border-color);
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: var(--accent);
+}
+
+/* ==========================================================
+   GRELHAS E CARTÕES (VANTAGENS E FROTA)
+   ========================================================== */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.card-vantagem {
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.card-vantagem h3 {
+    font-size: 16px;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.card-vantagem p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* Cartões de Automóvel */
+.card-carro {
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.carro-img {
+    height: 140px;
+    background: #edf2f7;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.badge-tag {
+    background: #e2e8f0;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: var(--text-muted);
+}
+
+.carro-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.carro-preco {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent);
+    margin: 10px 0;
+}
+
+.carro-preco span {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-muted);
+}
+
+.vantagens-lista {
+    list-style: none;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.vantagens-lista li {
+    margin-bottom: 4px;
+}
+
+.vantagens-lista li::before {
+    content: "✓ ";
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* ==========================================================
+   BANNER INFERIOR (CTA) E RODAPÉ
+   ========================================================== */
+.cta-banner {
+    background: var(--primary);
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 40px 20px;
+    text-align: center;
+    margin: 50px auto 20px auto;
+}
+
+.cta-banner h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cta-banner p {
+    color: #cbd5e1;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+    margin-top: 50px;
+}
+
+/* Ajuste Responsivo para Telemóvel */
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    nav {
+        display: none; /* Em ecrãs pequenos simplifica */
+    }
+}

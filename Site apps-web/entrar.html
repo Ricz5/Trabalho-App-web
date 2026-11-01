@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar - RentGo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+
+    <header>
+        <div class="nav-container">
+            <<a href="index.html" class="logo">
+                <img src="img/logo-rentgo.png" alt="RentGo">
+            </a>
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="frota.html">Frota</a>
+                <a href="locais.html">Locais</a>
+                <a href="como-funciona.html">Como funciona</a>
+                <a href="apoio.html">Apoio</a>
+            </nav>
+            <a href="entrar.html" class="btn-entrar">Entrar</a>
+        </div>
+    </header>
+
+    <main class="container" style="flex: 1; display: flex; align-items: center; justify-content: center;">
+        <div class="search-box" style="width: 100%; max-width: 400px;">
+            <h2 style="color: var(--primary); margin-bottom: 6px; text-align: center;">Bem-vindo à RentGo</h2>
+            <p style="color: var(--text-muted); font-size: 13px; text-align: center; margin-bottom: 20px;">Acede à tua área para gerir reservas.</p>
+            
+            <form>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="exemplo@email.pt" required>
+                </div>
+                <div class="form-group">
+                    <label>Palavra-passe</label>
+                    <input type="password" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;">Entrar</button>
+            </form>
+            
+            <p style="font-size: 12px; text-align: center; margin-top: 15px; color: var(--text-muted);">
+                Ainda não tens conta? <a href="#" style="color: var(--accent); font-weight: 600;">Regista-te aqui</a>
+            </p>
+        </div>
+    </main>
+
+</body>
+</html>
