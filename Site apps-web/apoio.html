@@ -13,7 +13,10 @@
             <a href="index.html" class="logo">
                 <img src="img/logo-rentgo.png" alt="RentGo">
             </a>
-            <nav>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+            <nav id="menu">
                 <a href="index.html">Início</a>
                 <a href="frota.html">Frota</a>
                 <a href="locais.html">Locais</a>
@@ -27,7 +30,7 @@
     <main class="container">
         <h1 style="color: var(--primary); margin-bottom: 30px;">Apoio e Contactos</h1>
 
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+        <div class="grid-2">
             <!-- Formulário de contacto -->
             <div class="search-box">
                 <h3 style="color: var(--primary); margin-bottom: 15px;">Envia-nos uma mensagem</h3>
@@ -64,6 +67,19 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <p>© 2026 RentGo · CBS Coimbra</p>
+    </footer>
+
+    <script>
+        const btn = document.querySelector('.menu-toggle');
+        const menu = document.getElementById('menu');
+        btn.addEventListener('click', () => {
+            const aberto = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', aberto);
+        });
+    </script>
 
 </body>
 </html>

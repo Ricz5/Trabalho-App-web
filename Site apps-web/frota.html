@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frota de Carros - RentGo</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header>
@@ -13,7 +15,8 @@
             <a href="index.html" class="logo">
                 <img src="img/logo-rentgo.png" alt="RentGo">
             </a>
-            <nav>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            <nav id="menu">
                 <a href="index.html">Início</a>
                 <a href="frota.html" class="active">Frota</a>
                 <a href="locais.html">Locais</a>
@@ -44,29 +47,32 @@
                 </div>
                 <div class="form-group" style="flex: 1; min-width: 180px; margin-bottom: 0;">
                     <label>Categoria</label>
-                    <select>
+                    <select id="filtro-categoria">
                         <option>Todas as categorias</option>
                         <option>Citadino</option>
                         <option>Compacto</option>
                         <option>SUV</option>
+                        <option>Carrinha</option>
                     </select>
                 </div>
                 <div class="form-group" style="flex: 1; min-width: 180px; margin-bottom: 0;">
                     <label>Preço</label>
-                    <select>
+                    <select id="filtro-preco">
                         <option>Qualquer preço</option>
                         <option>Até 30€/dia</option>
                         <option>Até 60€/dia</option>
                     </select>
                 </div>
-                <button class="btn-primary" style="padding: 12px 28px;">Filtrar</button>
+                <button type="button" id="btn-filtrar" class="btn-primary" style="padding: 12px 28px;">Filtrar</button>
             </div>
         </div>
 
         <!-- Lista de Carros -->
         <div class="grid-3">
-            <div class="card-carro">
-                <div class="carro-img">🚗</div>
+            <div class="card-carro" data-categoria="Citadino" data-preco="29">
+                <div class="carro-img">
+                    <img src="img/renault_clio.jpg" alt="Renault Clio">
+                </div>
                 <div class="carro-header">
                     <h3>Renault Clio</h3>
                     <span class="badge-tag">Citadino</span>
@@ -79,8 +85,10 @@
                 <a href="detalhe.html" class="btn-primary">Ver carro</a>
             </div>
 
-            <div class="card-carro">
-                <div class="carro-img">🚙</div>
+            <div class="card-carro" data-categoria="SUV" data-preco="45">
+                <div class="carro-img">
+                    <img src="img/peugeut3008.jpg" alt="Peugeot 3008">
+                </div>
                 <div class="carro-header">
                     <h3>Peugeot 3008</h3>
                     <span class="badge-tag">SUV</span>
@@ -93,13 +101,63 @@
                 <a href="detalhe.html" class="btn-primary">Ver carro</a>
             </div>
 
-            <div class="card-carro">
-                <div class="carro-img">🚘</div>
+            <div class="card-carro" data-categoria="Compacto" data-preco="50">
+                <div class="carro-img">
+                    <img src="img/bmw_serie1.jpg" alt="BMW Série 1">
+                </div>
                 <div class="carro-header">
                     <h3>BMW Série 1</h3>
                     <span class="badge-tag">Compacto</span>
                 </div>
                 <div class="carro-preco">50€ <span>/ dia</span></div>
+                <ul class="vantagens-lista">
+                    <li>Seguro básico incluído</li>
+                    <li>Quilómetros ilimitados</li>
+                </ul>
+                <a href="detalhe.html" class="btn-primary">Ver carro</a>
+            </div>
+
+            <div class="card-carro" data-categoria="Citadino" data-preco="25">
+                <div class="carro-img">
+                    <img src="img/fiat500.jpg" alt="Fiat 500">
+                </div>
+                <div class="carro-header">
+                    <h3>Fiat 500</h3>
+                    <span class="badge-tag">Citadino</span>
+                </div>
+                <div class="carro-preco">25€ <span>/ dia</span></div>
+                <ul class="vantagens-lista">
+                    <li>Seguro básico incluído</li>
+                    <li>Quilómetros ilimitados</li>
+                </ul>
+                <a href="detalhe.html" class="btn-primary">Ver carro</a>
+            </div>
+
+            <div class="card-carro" data-categoria="Carrinha" data-preco="55">
+                <div class="carro-img">
+                    <img src="img/ford-tourneo_custom-eu-Column_Card_Titanium_X-3x2-1000x667.webp" alt="Ford Tourneo">
+                </div>
+                <div class="carro-header">
+                    <h3>Ford Tourneo</h3>
+                    <span class="badge-tag">Carrinha</span>
+                </div>
+                <div class="carro-preco">55€ <span>/ dia</span></div>
+                <ul class="vantagens-lista">
+                    <li>Seguro básico incluído</li>
+                    <li>Quilómetros ilimitados</li>
+                </ul>
+                <a href="detalhe.html" class="btn-primary">Ver carro</a>
+            </div>
+
+            <div class="card-carro" data-categoria="SUV" data-preco="48">
+                <div class="carro-img">
+                    <img src="img/nissan_qashqai.jpg" alt="Nissan Qashqai">
+                </div>
+                <div class="carro-header">
+                    <h3>Nissan Qashqai</h3>
+                    <span class="badge-tag">SUV</span>
+                </div>
+                <div class="carro-preco">48€ <span>/ dia</span></div>
                 <ul class="vantagens-lista">
                     <li>Seguro básico incluído</li>
                     <li>Quilómetros ilimitados</li>
@@ -113,5 +171,33 @@
         <p>© 2026 RentGo · CBS Coimbra</p>
     </footer>
 
+    <script>
+        // Menu móvel
+        const btn = document.querySelector('.menu-toggle');
+        const menu = document.getElementById('menu');
+        btn.addEventListener('click', () => {
+            const aberto = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', aberto);
+        });
+
+        // Filtro da frota
+        const btnFiltrar = document.getElementById('btn-filtrar');
+        btnFiltrar.addEventListener('click', () => {
+            const categoria = document.getElementById('filtro-categoria').value;
+            const preco = document.getElementById('filtro-preco').value;
+
+            let limite = Infinity;
+            if (preco.includes('30')) limite = 30;
+            if (preco.includes('60')) limite = 60;
+
+            document.querySelectorAll('.card-carro').forEach(carro => {
+                const okCategoria = categoria.startsWith('Todas') || carro.dataset.categoria === categoria;
+                const okPreco = Number(carro.dataset.preco) <= limite;
+                carro.style.display = (okCategoria && okPreco) ? '' : 'none';
+            });
+        });
+    </script>
+
 </body>
+
 </html>

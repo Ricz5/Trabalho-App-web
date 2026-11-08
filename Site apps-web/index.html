@@ -13,7 +13,8 @@
             <a href="index.html" class="logo">
                 <img src="img/logo-rentgo.png" alt="RentGo">
             </a>
-            <nav>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            <nav id="menu">
                 <a href="index.html" class="active">Início</a>
                 <a href="frota.html">Frota</a>
                 <a href="locais.html">Locais</a>
@@ -83,6 +84,15 @@
     <footer>
         <p>© 2026 RentGo · Aplicações Web · CBS Coimbra</p>
     </footer>
+
+    <script>
+        const btn = document.querySelector('.menu-toggle');
+        const menu = document.getElementById('menu');
+        btn.addEventListener('click', () => {
+            const aberto = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', aberto);
+        });
+    </script>
 
 </body>
 </html>

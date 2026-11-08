@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhe do Carro - RentGo</title>
+    <title>Renault Clio - RentGo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +13,10 @@
             <a href="index.html" class="logo">
                 <img src="img/logo-rentgo.png" alt="RentGo">
             </a>
-            <nav>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+            <nav id="menu">
                 <a href="index.html">Início</a>
                 <a href="frota.html" class="active">Frota</a>
                 <a href="locais.html">Locais</a>
@@ -26,16 +29,18 @@
 
     <main class="container">
         <a href="frota.html" style="text-decoration: none; color: var(--accent); font-weight: 600;">← Voltar à lista</a>
-        
-        <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px; margin-top: 20px;">
+
+        <div class="detalhe-grid">
             <!-- Informações Técnicas -->
-            <div style="background: #fff; padding: 25px; border-radius: 14px; border: 1px solid var(--border-color);">
-                <div class="carro-img" style="height: 250px;">🚗</div>
+            <div class="detalhe-info">
+                <div class="carro-img" style="height: 250px;">
+                    <img src="img/renault_clio.jpg" alt="Renault Clio">
+                </div>
                 <h1 style="color: var(--primary); margin-bottom: 5px;">Renault Clio</h1>
                 <p style="color: var(--text-muted); margin-bottom: 20px;">Económico, ágil e perfeito para viagens pela cidade ou escapadelas de fim de semana.</p>
-                
+
                 <h3 style="margin-bottom: 10px;">Especificações</h3>
-                <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 14px; color: #555;">
+                <ul class="specs-lista">
                     <li>⛽ Combustível: Gasolina</li>
                     <li>🕹️ Caixa: Manual (5 vel.)</li>
                     <li>👥 Lotação: 5 Passageiros</li>
@@ -54,6 +59,19 @@
             </div>
         </div>
     </main>
+
+    <footer>
+        <p>© 2026 RentGo · CBS Coimbra</p>
+    </footer>
+
+    <script>
+        const btn = document.querySelector('.menu-toggle');
+        const menu = document.getElementById('menu');
+        btn.addEventListener('click', () => {
+            const aberto = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', aberto);
+        });
+    </script>
 
 </body>
 </html>

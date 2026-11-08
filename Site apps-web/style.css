@@ -27,6 +27,11 @@ body {
     line-height: 1.5;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ==========================================================
    BARRA DE NAVEGAÇÃO (HEADER)
    ========================================================== */
@@ -58,6 +63,7 @@ header {
     width: auto;
     display: block;
 }
+
 nav a {
     margin: 0 12px;
     text-decoration: none;
@@ -86,6 +92,17 @@ nav a:hover, nav a.active {
     border-color: var(--primary);
     background: var(--primary);
     color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: 1.5px solid var(--border-color);
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 20px;
+    color: var(--primary);
+    cursor: pointer;
 }
 
 /* ==========================================================
@@ -146,7 +163,7 @@ nav a:hover, nav a.active {
 }
 
 .hero h1 {
-    font-size: 38px;
+    font-size: clamp(1.75rem, 5vw, 2.4rem);
     font-weight: 800;
     line-height: 1.2;
     color: var(--primary);
@@ -194,14 +211,82 @@ nav a:hover, nav a.active {
     border-color: var(--accent);
 }
 
+.form-group input[type="checkbox"] {
+    width: auto;
+    padding: 0;
+}
+
+.label-linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 6px;
+}
+
+.label-linha label {
+    margin-bottom: 0;
+}
+
+.link-esqueceu {
+    font-size: 12px;
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-esqueceu:hover {
+    text-decoration: underline;
+}
+
+.campo-password {
+    position: relative;
+}
+
+.campo-password input {
+    padding-right: 80px; /* espaço para o botão "Mostrar" */
+}
+
+.btn-mostrar {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.check-linha {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-main);
+    cursor: pointer;
+}
+
+.check-linha input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
 /* ==========================================================
    GRELHAS E CARTÕES (VANTAGENS E FROTA)
    ========================================================== */
 .grid-3 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 24px;
     margin-top: 20px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
 }
 
 .card-vantagem {
@@ -235,14 +320,23 @@ nav a:hover, nav a.active {
 }
 
 .carro-img {
-    height: 140px;
-    background: #edf2f7;
+    height: 200px;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 40px;
     margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.carro-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .badge-tag {
@@ -292,6 +386,32 @@ nav a:hover, nav a.active {
 }
 
 /* ==========================================================
+   PÁGINA DE DETALHE DO CARRO
+   ========================================================== */
+.detalhe-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.detalhe-info {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+}
+
+.specs-lista {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ==========================================================
    BANNER INFERIOR (CTA) E RODAPÉ
    ========================================================== */
 .cta-banner {
@@ -323,12 +443,66 @@ footer {
     margin-top: 50px;
 }
 
-/* Ajuste Responsivo para Telemóvel */
+/* ==========================================================
+   RESPONSIVO (tem de ficar sempre no fim do ficheiro)
+   ========================================================== */
+
+/* Tablet e telemóvel */
 @media (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
+        padding: 30px 0;
+        gap: 28px;
     }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .detalhe-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .menu-toggle { display: block; }
+    .logo { margin-right: auto; }
+
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
     nav {
-        display: none; /* Em ecrãs pequenos simplifica */
+        display: none;
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav.open { display: flex; }
+
+    nav a {
+        margin: 0;
+        padding: 12px 0;
+        border-top: 1px solid var(--border-color);
+    }
+}
+
+/* Telemóveis pequenos */
+@media (max-width: 480px) {
+    .container { padding: 30px 16px; }
+    .search-box { padding: 20px; }
+    .cta-banner { padding: 30px 16px; }
+    .detalhe-info { padding: 18px; }
+
+    .specs-lista { grid-template-columns: 1fr; }
+    .search-box .btn-primary { width: 100%; }
+
+    /* 16px evita o zoom automático do iPhone ao tocar num campo */
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
     }
 }

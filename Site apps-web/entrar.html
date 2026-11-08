@@ -10,10 +10,12 @@
 
     <header>
         <div class="nav-container">
-            <<a href="index.html" class="logo">
+            <a href="index.html" class="logo">
                 <img src="img/logo-rentgo.png" alt="RentGo">
             </a>
-            <nav>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            <nav id="menu">
                 <a href="index.html">Início</a>
                 <a href="frota.html">Frota</a>
                 <a href="locais.html">Locais</a>
@@ -31,14 +33,26 @@
             
             <form>
                 <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="exemplo@email.pt" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="exemplo@email.pt" required>
                 </div>
+
                 <div class="form-group">
-                    <label>Palavra-passe</label>
-                    <input type="password" placeholder="••••••••" required>
+                    <div class="label-linha">
+                        <label for="password">Palavra-passe</label>
+                        <a href="#" class="link-esqueceu">Esqueceu-se?</a>
+                    </div>
+                    <div class="campo-password">
+                        <input type="password" id="password" placeholder="••••••••" required>
+                        <button type="button" id="mostrar-password" class="btn-mostrar">Mostrar</button>
+                    </div>
                 </div>
-                <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;">Entrar</button>
+
+                <label class="check-linha">
+                    <input type="checkbox" id="manter-sessao"> Manter sessão iniciada
+                </label>
+
+                <button type="submit" class="btn-primary" style="width: 100%; margin-top: 16px;">Entrar</button>
             </form>
             
             <p style="font-size: 12px; text-align: center; margin-top: 15px; color: var(--text-muted);">
@@ -46,6 +60,27 @@
             </p>
         </div>
     </main>
+
+
+    <script>
+    // Menu móvel
+    const btn = document.querySelector('.menu-toggle');
+    const menu = document.getElementById('menu');
+    btn.addEventListener('click', () => {
+        const aberto = menu.classList.toggle('open');
+        btn.setAttribute('aria-expanded', aberto);
+    });
+
+    // Mostrar / ocultar palavra-passe
+    const password = document.getElementById('password');
+    const mostrar = document.getElementById('mostrar-password');
+
+    mostrar.addEventListener('click', () => {
+        const visivel = password.type === 'text';
+        password.type = visivel ? 'password' : 'text';
+        mostrar.textContent = visivel ? 'Mostrar' : 'Ocultar';
+    });
+</script>
 
 </body>
 </html>
