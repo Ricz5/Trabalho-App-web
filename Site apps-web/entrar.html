@@ -34,7 +34,7 @@
             <form>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="exemplo@email.pt" required>
+                    <input type="email" id="email" name="email" autocomplete="email" placeholder="exemplo@email.pt" required>
                 </div>
 
                 <div class="form-group">
@@ -43,13 +43,13 @@
                         <a href="#" class="link-esqueceu">Esqueceu-se?</a>
                     </div>
                     <div class="campo-password">
-                        <input type="password" id="password" placeholder="••••••••" required>
+                        <input type="password" id="password" name="password" autocomplete="current-password" placeholder="••••••••" required>
                         <button type="button" id="mostrar-password" class="btn-mostrar">Mostrar</button>
                     </div>
                 </div>
 
                 <label class="check-linha">
-                    <input type="checkbox" id="manter-sessao"> Manter sessão iniciada
+                    <input type="checkbox" id="manter-sessao" name="manter-sessao"> Manter sessão iniciada
                 </label>
 
                 <button type="submit" class="btn-primary" style="width: 100%; margin-top: 16px;">Entrar</button>
@@ -62,25 +62,7 @@
     </main>
 
 
-    <script>
-    // Menu móvel
-    const btn = document.querySelector('.menu-toggle');
-    const menu = document.getElementById('menu');
-    btn.addEventListener('click', () => {
-        const aberto = menu.classList.toggle('open');
-        btn.setAttribute('aria-expanded', aberto);
-    });
-
-    // Mostrar / ocultar palavra-passe
-    const password = document.getElementById('password');
-    const mostrar = document.getElementById('mostrar-password');
-
-    mostrar.addEventListener('click', () => {
-        const visivel = password.type === 'text';
-        password.type = visivel ? 'password' : 'text';
-        mostrar.textContent = visivel ? 'Mostrar' : 'Ocultar';
-    });
-</script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

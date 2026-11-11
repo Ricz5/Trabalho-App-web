@@ -36,16 +36,16 @@
                 <h3 style="color: var(--primary); margin-bottom: 15px;">Envia-nos uma mensagem</h3>
                 <form>
                     <div class="form-group">
-                        <label>Nome Completo</label>
-                        <input type="text" placeholder="O teu nome" required>
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" autocomplete="name" placeholder="O teu nome" required>
                     </div>
                     <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" placeholder="teu@email.com" required>
+                        <label for="email-apoio">Email</label>
+                        <input type="email" id="email-apoio" name="email" autocomplete="email" placeholder="teu@email.com" required>
                     </div>
                     <div class="form-group">
-                        <label>Mensagem</label>
-                        <textarea rows="4" placeholder="Como te podemos ajudar?" required></textarea>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como te podemos ajudar?" required></textarea>
                     </div>
                     <button type="submit" class="btn-primary" style="width: 100%;">Enviar Mensagem</button>
                 </form>
@@ -54,7 +54,7 @@
             <!-- FAQ com a tag semântica HTML5 details -->
             <div>
                 <h3 style="color: var(--primary); margin-bottom: 15px;">Perguntas Frequentes</h3>
-                
+
                 <details style="background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 10px; border: 1px solid var(--border-color); cursor: pointer;">
                     <summary style="font-weight: 600;">Qual é a idade mínima para alugar?</summary>
                     <p style="margin-top: 8px; font-size: 13px; color: var(--text-muted);">A idade mínima é de 21 anos com pelo menos 1 ano de carta de condução válida.</p>
@@ -72,14 +72,7 @@
         <p>© 2026 RentGo · CBS Coimbra</p>
     </footer>
 
-    <script>
-        const btn = document.querySelector('.menu-toggle');
-        const menu = document.getElementById('menu');
-        btn.addEventListener('click', () => {
-            const aberto = menu.classList.toggle('open');
-            btn.setAttribute('aria-expanded', aberto);
-        });
-    </script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>

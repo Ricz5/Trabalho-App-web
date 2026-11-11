@@ -34,11 +34,11 @@
         </div>
 
         <!-- Filtros de Pesquisa -->
-        <div class="search-box" style="margin-bottom: 35px;">
+        <div class="search-box" style="margin-bottom: 20px;">
             <div style="display: flex; flex-wrap: wrap; gap: 15px; align-items: flex-end;">
                 <div class="form-group" style="flex: 1; min-width: 180px; margin-bottom: 0;">
-                    <label>Localização</label>
-                    <select>
+                    <label for="filtro-localizacao">Localização</label>
+                    <select id="filtro-localizacao" name="localizacao">
                         <option>Todas as localizações</option>
                         <option>Lisboa - Aeroporto</option>
                         <option>Porto - Aeroporto</option>
@@ -46,8 +46,8 @@
                     </select>
                 </div>
                 <div class="form-group" style="flex: 1; min-width: 180px; margin-bottom: 0;">
-                    <label>Categoria</label>
-                    <select id="filtro-categoria">
+                    <label for="filtro-categoria">Categoria</label>
+                    <select id="filtro-categoria" name="categoria">
                         <option>Todas as categorias</option>
                         <option>Citadino</option>
                         <option>Compacto</option>
@@ -56,8 +56,8 @@
                     </select>
                 </div>
                 <div class="form-group" style="flex: 1; min-width: 180px; margin-bottom: 0;">
-                    <label>Preço</label>
-                    <select id="filtro-preco">
+                    <label for="filtro-preco">Preço</label>
+                    <select id="filtro-preco" name="preco">
                         <option>Qualquer preço</option>
                         <option>Até 30€/dia</option>
                         <option>Até 60€/dia</option>
@@ -67,9 +67,12 @@
             </div>
         </div>
 
+        <!-- Resumo da pesquisa (preenchido pelo script) -->
+        <p id="resumo-pesquisa" style="display: none; margin-bottom: 20px; font-weight: 600; color: var(--primary);"></p>
+
         <!-- Lista de Carros -->
         <div class="grid-3">
-            <div class="card-carro" data-categoria="Citadino" data-preco="29">
+            <div class="card-carro" data-categoria="Citadino" data-preco="29" data-locais="Lisboa - Aeroporto,Porto - Aeroporto,Coimbra - Estação">
                 <div class="carro-img">
                     <img src="img/renault_clio.jpg" alt="Renault Clio">
                 </div>
@@ -85,7 +88,7 @@
                 <a href="detalhe.html" class="btn-primary">Ver carro</a>
             </div>
 
-            <div class="card-carro" data-categoria="SUV" data-preco="45">
+            <div class="card-carro" data-categoria="SUV" data-preco="45" data-locais="Lisboa - Aeroporto,Porto - Aeroporto">
                 <div class="carro-img">
                     <img src="img/peugeut3008.jpg" alt="Peugeot 3008">
                 </div>
@@ -101,7 +104,7 @@
                 <a href="detalhe.html" class="btn-primary">Ver carro</a>
             </div>
 
-            <div class="card-carro" data-categoria="Compacto" data-preco="50">
+            <div class="card-carro" data-categoria="Compacto" data-preco="50" data-locais="Lisboa - Aeroporto,Coimbra - Estação">
                 <div class="carro-img">
                     <img src="img/bmw_serie1.jpg" alt="BMW Série 1">
                 </div>
@@ -117,7 +120,7 @@
                 <a href="detalhe.html" class="btn-primary">Ver carro</a>
             </div>
 
-            <div class="card-carro" data-categoria="Citadino" data-preco="25">
+            <div class="card-carro" data-categoria="Citadino" data-preco="25" data-locais="Lisboa - Aeroporto,Porto - Aeroporto,Coimbra - Estação">
                 <div class="carro-img">
                     <img src="img/fiat500.jpg" alt="Fiat 500">
                 </div>
@@ -133,7 +136,7 @@
                 <a href="detalhe.html" class="btn-primary">Ver carro</a>
             </div>
 
-            <div class="card-carro" data-categoria="Carrinha" data-preco="55">
+            <div class="card-carro" data-categoria="Carrinha" data-preco="55" data-locais="Porto - Aeroporto,Coimbra - Estação">
                 <div class="carro-img">
                     <img src="img/ford-tourneo_custom-eu-Column_Card_Titanium_X-3x2-1000x667.webp" alt="Ford Tourneo">
                 </div>
@@ -149,7 +152,7 @@
                 <a href="detalhe.html" class="btn-primary">Ver carro</a>
             </div>
 
-            <div class="card-carro" data-categoria="SUV" data-preco="48">
+            <div class="card-carro" data-categoria="SUV" data-preco="48" data-locais="Lisboa - Aeroporto,Porto - Aeroporto,Coimbra - Estação">
                 <div class="carro-img">
                     <img src="img/nissan_qashqai.jpg" alt="Nissan Qashqai">
                 </div>
@@ -165,38 +168,19 @@
                 <a href="detalhe.html" class="btn-primary">Ver carro</a>
             </div>
         </div>
+
+        <!-- Mensagem quando não há carros -->
+        <p id="sem-resultados" style="display: none; text-align: center; margin-top: 30px; color: var(--text-muted);">
+            Não há carros disponíveis com estes critérios. Tenta outro local ou outra categoria.
+        </p>
     </main>
 
     <footer>
         <p>© 2026 RentGo · CBS Coimbra</p>
     </footer>
 
-    <script>
-        // Menu móvel
-        const btn = document.querySelector('.menu-toggle');
-        const menu = document.getElementById('menu');
-        btn.addEventListener('click', () => {
-            const aberto = menu.classList.toggle('open');
-            btn.setAttribute('aria-expanded', aberto);
-        });
-
-        // Filtro da frota
-        const btnFiltrar = document.getElementById('btn-filtrar');
-        btnFiltrar.addEventListener('click', () => {
-            const categoria = document.getElementById('filtro-categoria').value;
-            const preco = document.getElementById('filtro-preco').value;
-
-            let limite = Infinity;
-            if (preco.includes('30')) limite = 30;
-            if (preco.includes('60')) limite = 60;
-
-            document.querySelectorAll('.card-carro').forEach(carro => {
-                const okCategoria = categoria.startsWith('Todas') || carro.dataset.categoria === categoria;
-                const okPreco = Number(carro.dataset.preco) <= limite;
-                carro.style.display = (okCategoria && okPreco) ? '' : 'none';
-            });
-        });
-    </script>
+    <script src="js/script.js"></script>
+    <script src="js/pesquisa.js"></script>
 
 </body>
 

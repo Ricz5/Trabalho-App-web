@@ -155,25 +155,78 @@ nav a:hover, nav a.active {
    PÁGINA INICIAL: HERO & CAIXA DE PESQUISA
    ========================================================== */
 .hero {
+    position: relative;
+    isolation: isolate;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
+    gap: clamp(24px, 4vw, 48px);
     align-items: center;
-    padding: 50px 0;
+    min-height: 430px;
+    padding: clamp(32px, 5vw, 60px);
+    border-radius: 18px;
+    overflow: hidden;
+    background-color: #18324f; /* cor de reserva enquanto a fotografia carrega */
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.12);
+}
+
+/* Fotografia carregada através do atributo src no index.html */
+.hero-background-image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Camada escura para manter o título legível */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+        90deg,
+        rgba(3, 20, 43, 0.72) 0%,
+        rgba(3, 20, 43, 0.52) 48%,
+        rgba(3, 20, 43, 0.22) 100%
+    );
+    pointer-events: none;
+}
+
+.hero > *:not(.hero-background-image) {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-copy {
+    max-width: 560px;
 }
 
 .hero h1 {
     font-size: clamp(1.75rem, 5vw, 2.4rem);
     font-weight: 800;
     line-height: 1.2;
-    color: var(--primary);
+    color: #ffffff;
     margin-bottom: 12px;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.22);
 }
 
 .hero p {
-    color: var(--text-muted);
+    max-width: 540px;
+    color: rgba(255, 255, 255, 0.96);
     font-size: 16px;
     margin-bottom: 20px;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.22);
+}
+
+.hero .search-box {
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.16);
 }
 
 /* Caixa de pesquisa rápida */
@@ -444,15 +497,17 @@ footer {
 }
 
 /* ==========================================================
-   RESPONSIVO (tem de ficar sempre no fim do ficheiro)
+   RESPONSIVO 
    ========================================================== */
 
 /* Tablet e telemóvel */
 @media (max-width: 768px) {
     .hero {
         grid-template-columns: 1fr;
-        padding: 30px 0;
-        gap: 28px;
+        min-height: auto;
+        padding: 32px 22px;
+        gap: 24px;
+        background-position: center;
     }
 
     .grid-2 {
@@ -492,6 +547,8 @@ footer {
 /* Telemóveis pequenos */
 @media (max-width: 480px) {
     .container { padding: 30px 16px; }
+    .hero { padding: 26px 18px; border-radius: 14px; }
+    .hero h1 { font-size: 2rem; }
     .search-box { padding: 20px; }
     .cta-banner { padding: 30px 16px; }
     .detalhe-info { padding: 18px; }
@@ -504,5 +561,226 @@ footer {
     .form-group select,
     .form-group textarea {
         font-size: 16px;
+    }
+}
+
+/* ==========================================================
+   ALTERNATIVA MOBILE — IMAGEM NO TOPO, FORMULÁRIO ABAIXO
+   Mantém o layout desktop e elimina a sobreposição do cartão.
+   ========================================================== */
+@media (max-width: 768px) {
+    .container {
+        padding: 24px 16px 36px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        min-height: 0;
+        padding: 0;
+        overflow: visible;
+        border-radius: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    /* A fotografia fica apenas atrás do título e da descrição. */
+    .hero-background-image {
+        top: 0;
+        right: 0;
+        bottom: auto;
+        left: 0;
+        width: 100%;
+        height: 226px;
+        max-width: none;
+        object-fit: cover;
+        object-position: center 56%;
+        border-radius: 16px;
+    }
+
+    .hero::before {
+        inset: 0 0 auto;
+        width: 100%;
+        height: 226px;
+        border-radius: 16px;
+        background: linear-gradient(
+            105deg,
+            rgba(3, 20, 43, 0.78) 0%,
+            rgba(3, 20, 43, 0.58) 58%,
+            rgba(3, 20, 43, 0.34) 100%
+        );
+    }
+
+    .hero-copy {
+        width: 100%;
+        max-width: none;
+        min-height: 226px;
+        padding: 24px 20px 22px;
+    }
+
+    /* O <br> do desktop não força uma quebra pouco natural no telemóvel. */
+    .hero-copy h1 br {
+        display: none;
+    }
+
+    .hero h1 {
+        max-width: 340px;
+        margin-bottom: 9px;
+        font-size: clamp(1.7rem, 6.8vw, 1.95rem);
+        line-height: 1.12;
+        letter-spacing: -0.025em;
+    }
+
+    .hero p {
+        max-width: 330px;
+        margin-bottom: 0;
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    /* Cartão independente: sem flutuar nem cobrir a fotografia. */
+    .hero .search-box {
+        width: 100%;
+        margin: 0;
+        padding: 20px 18px 18px;
+        border: 1px solid var(--border-color);
+        border-radius: 16px;
+        background: #ffffff;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    .hero .search-box h3 {
+        margin-bottom: 14px !important;
+        font-size: 18px;
+    }
+
+    .hero .form-group {
+        margin-bottom: 12px;
+    }
+
+    .hero .form-group label {
+        margin-bottom: 5px;
+        font-size: 11px;
+    }
+
+    .hero .form-group input,
+    .hero .form-group select {
+        width: 100%;
+        min-height: 48px;
+        padding: 11px 12px;
+        font-size: 16px;
+    }
+
+    .hero .search-box .btn-primary {
+        width: 100%;
+        min-height: 48px;
+        margin-top: 2px;
+        padding: 12px 16px;
+    }
+
+    .hero + section {
+        margin-top: 30px !important;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .detalhe-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    nav {
+        display: none;
+        order: 3;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        margin: 0;
+        padding: 12px 0;
+        border-top: 1px solid var(--border-color);
+    }
+}
+
+/* Ajustes para ecrãs estreitos. */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 14px 30px;
+    }
+
+    .hero-background-image,
+    .hero::before {
+        height: 218px;
+    }
+
+    .hero-copy {
+        min-height: 218px;
+        padding: 22px 18px 20px;
+    }
+
+    .hero h1 {
+        max-width: 315px;
+        font-size: clamp(1.65rem, 7.1vw, 1.85rem);
+        line-height: 1.12;
+    }
+
+    .hero p {
+        max-width: 310px;
+        font-size: 13.5px;
+        line-height: 1.45;
+    }
+
+    .hero .search-box {
+        padding: 18px 16px 16px;
+    }
+
+    .hero .search-box h3 {
+        margin-bottom: 12px !important;
+        font-size: 17px;
+    }
+
+    .hero .form-group {
+        margin-bottom: 11px;
+    }
+
+    .hero .form-group input,
+    .hero .form-group select,
+    .hero .form-group textarea {
+        font-size: 16px;
+    }
+
+    .cta-banner {
+        padding: 30px 16px;
+    }
+
+    .detalhe-info {
+        padding: 18px;
+    }
+
+    .specs-lista {
+        grid-template-columns: 1fr;
     }
 }

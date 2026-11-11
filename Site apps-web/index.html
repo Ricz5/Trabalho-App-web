@@ -28,7 +28,14 @@
     <main class="container">
         <!-- Hero Section -->
         <section class="hero">
-            <div>
+            <!-- Imagem de fundo carregada diretamente pelo HTML (src + alt) -->
+            <img
+                class="hero-background-image"
+                src="img/background.png"
+                alt="Estrada costeira junto ao mar, com um automóvel"
+            >
+
+            <div class="hero-copy">
                 <h1>Aluga o teu carro.<br>Simples e transparente.</h1>
                 <p>Viaja ao teu ritmo com preços claros e uma frota pronta para partir. Sem taxas escondidas.</p>
             </div>
@@ -36,18 +43,23 @@
             <!-- Caixa de Pesquisa rápida -->
             <div class="search-box">
                 <h3 style="margin-bottom: 15px; color: var(--primary);">Encontrar um carro</h3>
-                <form action="frota.html">
+                <form action="frota.html" method="get">
                     <div class="form-group">
-                        <label>Local de levantamento</label>
-                        <input type="text" placeholder="Ex: Aeroporto de Lisboa" required>
+                        <label for="local">Local de levantamento</label>
+                        <select id="local" name="local" required>
+                            <option value="" disabled selected>Escolhe o local</option>
+                            <option value="Lisboa - Aeroporto">Lisboa - Aeroporto</option>
+                            <option value="Porto - Aeroporto">Porto - Aeroporto</option>
+                            <option value="Coimbra - Estação">Coimbra - Estação</option>
+                        </select>
                     </div>
                     <div class="form-group">
-                        <label>Data de levantamento</label>
-                        <input type="date" required>
+                        <label for="data-levantamento">Data de levantamento</label>
+                        <input type="date" id="data-levantamento" name="levantamento" required>
                     </div>
                     <div class="form-group">
-                        <label>Data de devolução</label>
-                        <input type="date" required>
+                        <label for="data-devolucao">Data de devolução</label>
+                        <input type="date" id="data-devolucao" name="devolucao" required>
                     </div>
                     <button type="submit" class="btn-primary" style="width: 100%;">Pesquisar carros</button>
                 </form>
@@ -85,14 +97,8 @@
         <p>© 2026 RentGo · Aplicações Web · CBS Coimbra</p>
     </footer>
 
-    <script>
-        const btn = document.querySelector('.menu-toggle');
-        const menu = document.getElementById('menu');
-        btn.addEventListener('click', () => {
-            const aberto = menu.classList.toggle('open');
-            btn.setAttribute('aria-expanded', aberto);
-        });
-    </script>
+    <script src="js/script.js"></script>
+    <script src="js/pesquisa.js"></script>
 
 </body>
 </html>
